@@ -36,6 +36,7 @@ export default function PostGenerator() {
       const data = await res.text();
       console.log("Claude returned:", data);
       setGeneratedPost(data);
+
     } catch (error) {
       setGeneratedPost("Error generating post.");
     } finally {
